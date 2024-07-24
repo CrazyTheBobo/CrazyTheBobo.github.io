@@ -3,7 +3,7 @@
 html, body, button {
 	margin:0;
 	padding:0;
-	background-color: #c55b68;
+	background-color: #e17d89;
 	color: #f0f4fa;
 	font-family: "Dosis";
 	font-size: 25px;
@@ -87,7 +87,7 @@ hr {
 	position: absolute;
 	left: 0;
 	top: 35%;
-	background-color: #c55b68;
+	background-color: #e17d89;
 	width: 40%;
 	overflow: visible;
 	align-items: center;
@@ -97,7 +97,7 @@ hr {
 	position: absolute;
 	left: 105%;
 	top: 0;
-	background-color: #c55b68;
+	background-color: #e17d89;
 	height: 100%;
 	width: 7%;
 }
@@ -120,7 +120,7 @@ hr {
 }
 
 .section-1 {
-	background-color: #c55b68;
+	background-color: #e17d89;
 	color: #f0f3fa;
 }
 .section-2 {
