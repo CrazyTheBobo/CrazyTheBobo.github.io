@@ -88,26 +88,25 @@ hr {
 	left: 0;
 	top: 35%;
 	background-color: #c55b68;
-	height: 30%;
 	width: 40%;
-	overflow: hidden;
+	overflow: visible;
 	align-items: center;
 }
 
-.side-box-top {
+#welcome-side-box {
 	position: absolute;
-	left: 42%;
-	top: 35%;
+	left: 105%;
+	top: 0;
 	background-color: #c55b68;
-	height: 30%;
-	width: 3%;
+	height: 100%;
+	width: 7%;
 }
 
 .section {
 	display: flex;
 	position: relative;
-	width: 100%;
-	overflow: hidden;
+	
+	overflow: hidden; /* to allow to side box - present as child - to be seen */
 	padding-bottom: 40px;
 }
 
@@ -193,6 +192,7 @@ hr {
 	align-items: stretch;
 	justify-content: center;
 	text-align: center;
+	width: auto;
 }
 
 .flex-table-column {
@@ -200,6 +200,7 @@ hr {
 	padding-left: 10vw;
 	flex-flow: column-reverse wrap;
 	align-content: flex-start;
+	right: 0;
 }
 
 .flex-table-resume {
@@ -208,7 +209,6 @@ hr {
 	flex-flow: row nowrap;
 	text-align: left;
 	align-items: center;
-	max-width: 80vw;
 
 	margin-bottom: 20px;
 }
@@ -219,7 +219,6 @@ hr {
 	justify-content: right;
 
 	font-size: 1.4em;
-	right: 40px;
 }
 
 .flex-vertical {

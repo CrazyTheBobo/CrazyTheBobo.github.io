@@ -1,13 +1,17 @@
+// collapsible boxes in monologues, with arrows that change direction
 var coll = document.getElementsByClassName("collapsible");
 
 for (var i = 0; i < coll.length; i++) {
-	childDiv = coll[i].getElementsByTagName('div')[0]
 	coll[i].addEventListener("click", function() {
-		/* classList returns a list of class names assigned to this element */
+		// Two mistakes initially:
+		// 1. Forgetting var at the front
+		// 2. Putting this outside EventListener. This will cause childDiv to be defined w.r.t last i
+		var childDiv = this.getElementsByTagName('div')[0]
+		// classList returns a list of class names assigned to this element
 		this.classList.toggle("active");
-		/* nextElementSibling returns the next child of the same parent. 
-		I.e it will be in same tree level.
-		In our case, it returns the collapsible element which is right after the header. */
+		// nextElementSibling returns the next child of the same parent. 
+		// I.e it will be in same tree level.
+		// In our case, it returns the collapsible element which is right after the header.
 		var content = this.nextElementSibling;
 		if (content.style.maxHeight) {
 			content.style.maxHeight = null;
@@ -18,4 +22,5 @@ for (var i = 0; i < coll.length; i++) {
 			childDiv.textContent = "▲";
 		}
 	})
+
 }
