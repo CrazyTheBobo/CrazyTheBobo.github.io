@@ -1,29 +1,22 @@
 <!doctype html>
 <html>
 	<head>
+		<script src="scripts/jquery.js"></script> 
+	    <script> 
+		    $(function() {
+		      $("#banner").load("banner.html"); 
+		    });
+		    $(function() {
+		      $("#footer").load("footer.html"); 
+		    });
+	    </script>
 		<title>Bohan's website</title>
 	    <meta charset="utf-8">
 	    <link rel="stylesheet" href="styles.css">
 	</head>
 
 	<body>
-		<div class="header">
-			<a href="index.html">
-				<h3>Home</h3>
-			</a>
-			<a href="drawings.html">
-				<span class="header-text">Drawings</span>
-			</a>
-			<a href="monologues.html">
-			<span class="header-text">Monologues</span>
-			</a>
-			<a href="photos.html">
-				<span class="header-text">Photos</span>
-			</a>
-			<a href="resume.html">
-				<span class="header-text">Resume</span>
-			</a>
-		</div>
+		<div id="banner" class="header"></div>
 
 		<div class="container">
 			<div class = "section section-top">
@@ -95,7 +88,7 @@
 				</div>
 				<div>
 					<img src="images/montessori.png" alt="Montessori Seniors logo" class="work-images">
-					<h3>Montessori for Dementia Care</h3>
+					<h3>Montessori Seniors</h3>
 					<p>02/2023 - 03/2023</p>
 					<p>Part-time employee</p>
 			</div>
@@ -111,39 +104,7 @@
 				<a href="resume.html"><span>See resume ></span></a>
 			</div>
 
-			<div class="section section-footer">
-				<div>
-					<table class = "social-media">
-						<thead>
-							<tr>
-								<th>
-									<a href="https://www.instagram.com/crazythebobo/" target="_blank">
-										<img src="images/instagram.webp" alt="White Instagram logo" class="social-media-images">
-									</a>
-								</th>
-								<th>
-									<a href="https://www.linkedin.com/in/bohan-lin-59817b299/" target="_blank">
-										<img src="images/linkedin.webp" alt="White LinkedIn logo" class="social-media-images">
-									</a>
-								</th>
-								<th>
-									<a href="https://www.strava.com/athletes/96600552" target="_blank">
-										<img src="images/strava.png" alt="White Strava logo" class="social-media-images">
-									</a>
-								</th>
-								<th>
-									<a href="mailto:bohanskps@gmail.com" target="_blank">
-										<img src="images/mail3.png" alt="White Mail logo" class="social-media-images">
-									</a>
-								</th>
-							</tr>
-						</thead>
-					</table>
-				</div>
-				<div class="text-right-bottom">
-					<p>© 2024 Bohan Lin</p>
-				</div>
-			</div>
+			<div id="footer" class="section section-footer"></div>
 		</div>
 	</body>
 	<script src="scripts/script.js"></script>
