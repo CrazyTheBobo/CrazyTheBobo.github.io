@@ -317,7 +317,7 @@ hr {
 	transition: max-height 0.3s ease-out; 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) { /* typical mobile phone break point */
 	.text-top {
 		width: 100%;
 	}
