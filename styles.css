@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+html, body, button {
+	margin:0;
+	padding:0;
+	background-color: #c55b68;
+	color: #f0f4fa;
+	font-family: "Dosis";
+	font-size: 25px;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+p, h1, h2, h3, h4 {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+h1 {
+	font-size: 2.5em;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 1.5em;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+table {
+	position: relative;
+	table-layout: fixed;
+	left: 40px;
+	width: 80%;
+	text-align: center;
+}
+
+th {
+	padding-bottom: 25px;
+}
+
+td {
+	padding-bottom: 10px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	filter: brightness(70%);
+}
+
+hr {
+	width: 70%;
+	border: 2px solid;
+	border-radius: 2px;
+	margin-left: 0;
+}
+
+#resume-banner {
+	display: block;
+	text-align: center;
+}
+
+.header {
+	position: fixed;
+	margin-top: 0;
+	width: 100%;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	background-color: #211c33;
+	z-index: 1;
+}
+
+.text-top {
+	position: absolute;
+	left: 0;
+	top: 35%;
+	background-color: #c55b68;
+	height: 30%;
+	width: 40%;
+	overflow: hidden;
+	align-items: center;
+}
+
+.side-box-top {
+	position: absolute;
+	left: 42%;
+	top: 35%;
+	background-color: #c55b68;
+	height: 30%;
+	width: 3%;
+}
+
+.section {
+	display: flex;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 40px;
+}
+
+.section-top {
+	height: 80vh;
+	background-image: url("images/Frozen_Memories.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.section-1 {
+	background-color: #c55b68;
+	color: #f0f3fa;
+}
+.section-2 {
+	background-color: #d1e5f0;
+	color: #b84a6b;
+}
+
+.section-footer {
+	background-color: #211c33;
+	height: 160px;
+}
+
+.header-text {
+	padding: 15px;
+}
+
+.text-left {
+	position: relative;
+	top:0;
+	left:0;
+	padding-top:40px;
+}
+
+.text-right {
+	position: relative;
+	text-align: right;
+	justify-content: flex-end;
+}
+
+.text-right-bottom {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	text-align: right;
+}
+
+.table-title{
+	font-size:1.2em;
+	font-weight: bold;
+}
+
+.table-right {
+	margin-left: auto;
+	margin-right: 40px;
+	right: 40px;
+}
+
+.work-images {
+	max-height: 120px;
+}
+
+.education-images-resume {
+	max-width: 100px;
+}
+
+.social-media {
+	width: 200px;
+	top: 30px;
+	word-break: break-all;
+}
+
+.social-media-images {
+	max-height: 28px;
+}
+
+.flex-table {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: stretch;
+	justify-content: center;
+	text-align: center;
+}
+
+.flex-table-column {
+	display: flex;
+	padding-left: 10vw;
+	flex-flow: column-reverse wrap;
+	align-content: flex-start;
+}
+
+.flex-table-resume {
+	display: flex;
+	align-content: flex-start;
+	flex-flow: row nowrap;
+	text-align: left;
+	align-items: center;
+	max-width: 80vw;
+
+	margin-bottom: 20px;
+}
+
+.see-resume {
+	padding-top: 40px;
+	padding-right: 40px;
+	justify-content: right;
+
+	font-size: 1.4em;
+	right: 40px;
+}
+
+.flex-vertical {
+	flex-direction: column;
+}
+
+.container {
+	display: absolute;
+	margin-top: 70px;
+}
+
+.resume-header-top {
+	margin-top: 40px;
+	padding-top: 0px;
+}
+
+.awards-container {
+	max-width: 80vw;
+	display: block;
+}
+
+.awards-header {
+	padding-top: 0;
+	font-size: 1.5em;
+	color: #211c33;
+	font-weight: 400;
+}
+
+.awards-header a:hover {
+	filter: brightness(100%); /* Or it will apply the darkening filter I applied to the a element*/
+	color: #de5a81;
+}
+
+.experience-header {
+	padding-top: 0;
+	font-size: 1.5em;
+	color: #f0f4fa;
+	font-weight: 400;
+}
+
+.no-margin {
+	padding-bottom: 0;
+}
+
+.monologue-box {
+	margin: auto;
+	align-items: center;
+	width: 80vw;
+	margin-bottom: 40px;
+}
+
+.collapsible {
+	background-color: #211c33;
+	color: #f0f4fa;
+	border: none;
+	width: 80vw;
+	text-align: left;
+	position: relative;
+}
+
+.collapsible:hover {
+	background-color: #8e213e;
+}
+
+/* creates pseudo-element in the code for the symbol */
+.button-symbol {
+	font-size: 0.8em;
+	font-weight: bold;
+	color: inherit;
+	float: right;
+	top: 40px;
+	right: 40px;
+	position: absolute;
+}
+
+.monologue-title {
+	/* as the ^/v button is positioned absolutely, this prevents overlap. */
+	margin-right: 60px;
+	margin-bottom: 0;
+
+	font-weight: 300;
+}
+
+.monologue-date {
+	font-size: 0.8em;
+	margin-top: 7px;
+	margin-bottom: 30px;
+}
+
+.monologue-content {
+	overflow: hidden;
+	/* strangely, the object having padding will cause it to not fully close. */
+	max-height: 0;
+	/* to enable animated collapsible.
+	Ease-out has a slow start and end; its speed curve is like an inverse parabola. */
+	transition: max-height 0.3s ease-out; 
+}
