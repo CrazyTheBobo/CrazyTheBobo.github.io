@@ -67,15 +67,6 @@ hr {
 	margin-left: 0;
 }
 
-@media only screen and (min-width: 768px) {
-	#resume-banner {
-		width: 100vw;
-	}
-	#welcome-side-box {
-		display: none;
-	}
-}
-
 #resume-banner {
 	display: block;
 	text-align: center;
@@ -324,4 +315,13 @@ hr {
 	/* to enable animated collapsible.
 	Ease-out has a slow start and end; its speed curve is like an inverse parabola. */
 	transition: max-height 0.3s ease-out; 
+}
+
+@media only screen and (max-width: 768px) {
+	.text-top {
+		width: 100%;
+	}
+	#welcome-side-box {
+		display: none;
+	}
 }
