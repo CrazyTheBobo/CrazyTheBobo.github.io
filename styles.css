@@ -67,6 +67,10 @@ hr {
 	margin-left: 0;
 }
 
+#banner-burger-menu {
+	display: none;
+}
+
 #resume-banner {
 	display: block;
 	text-align: center;
@@ -318,6 +322,13 @@ hr {
 }
 
 @media only screen and (max-width: 768px) { /* typical mobile phone break point */
+	.header span {
+		display: none;
+	}
+	.header #banner-burger-menu {
+		display: block;
+	}
+
 	.text-top {
 		width: 100%;
 	}
