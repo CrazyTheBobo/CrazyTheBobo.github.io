@@ -69,6 +69,12 @@ hr {
 
 #banner-burger-menu {
 	display: none;
+	font-size: 0.8em;
+	font-weight: bold;
+	color: inherit;
+	float: right;
+	right: 40px;
+	position: absolute;
 }
 
 #resume-banner {
