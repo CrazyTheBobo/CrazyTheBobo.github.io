@@ -23,4 +23,15 @@ for (var i = 0; i < coll.length; i++) {
 		}
 	})
 
-}
+var menu = document.getElementById("banner-burger-menu");
+var dropDown = document.getElementById("drop-down");
+
+menu.addEventListener("click", function() {
+	this.classList.toggle("active");
+	if (dropDown.style.maxHeight) {
+		dropDown.style.maxHeight = null;
+	}
+	else {
+		dropDown.style.maxHeight = dropDown.scrollHeight + "px";
+	}
+})

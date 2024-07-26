@@ -69,12 +69,25 @@ hr {
 
 #banner-burger-menu {
 	display: none;
-	font-size: 0.8em;
-	font-weight: bold;
-	color: inherit;
-	float: right;
-	right: 40px;
-	position: absolute;
+	top: 7px;
+	right: 30px;
+	position: fixed;
+	z-index: 2;
+
+	background-color: #211c33;
+	font-size: 1.5em;
+	border: none;	
+}
+
+#drop-down {
+	position: fixed;
+	overflow: hidden;
+	top: 70px;
+	/* strangely, the object having padding will cause it to not fully close. */
+	max-height: 0;
+	/* to enable animated collapsible.
+	Ease-out has a slow start and end; its speed curve is like an inverse parabola. */
+	transition: max-height 0.3s ease-out; 
 }
 
 #resume-banner {
@@ -331,7 +344,7 @@ hr {
 	.header span {
 		display: none;
 	}
-	.header #banner-burger-menu {
+	#banner-burger-menu {
 		display: block;
 	}
 
