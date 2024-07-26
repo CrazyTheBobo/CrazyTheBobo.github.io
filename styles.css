@@ -88,12 +88,22 @@ hr {
 	background-color: #211c33;
 	/* to enable animated collapsible.
 	Ease-out has a slow start and end; its speed curve is like an inverse parabola. */
-	transition: max-height 0.3s ease-out; 
+	transition: max-height 0.2s ease-out; 
+	z-index: 3;
 }
 
 #resume-banner {
 	display: block;
 	text-align: center;
+}
+
+.drop-down-text {
+	display: block;
+	color: #f0f4fa;
+	font-family: "Dosis";
+	font-size: 25px;
+	width: 100vh;
+	padding: 0px 0px 15px 40px;
 }
 
 .header {
