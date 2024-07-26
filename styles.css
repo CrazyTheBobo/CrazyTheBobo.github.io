@@ -85,6 +85,7 @@ hr {
 	top: 70px;
 	/* strangely, the object having padding will cause it to not fully close. */
 	max-height: 0;
+	background-color: #211c33;
 	/* to enable animated collapsible.
 	Ease-out has a slow start and end; its speed curve is like an inverse parabola. */
 	transition: max-height 0.3s ease-out; 
