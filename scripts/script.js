@@ -22,6 +22,7 @@ for (var i = 0; i < coll.length; i++) {
 			childDiv.textContent = "▲";
 		}
 	})
+}
 
 var menu = document.getElementById("banner-burger-menu");
 var dropDown = document.getElementById("drop-down");
