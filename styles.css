@@ -359,6 +359,9 @@ hr {
 		display: block;
 	}
 
+	.section-top {
+		background-image: url("images/auburn.jpg");
+	}
 	.text-top {
 		width: 100%;
 	}
