@@ -145,7 +145,7 @@ hr {
 }
 
 .section-top {
-	height: 80vh;
+	height: 80%;
 	background-image: url("images/Frozen_Memories_small.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -351,6 +351,63 @@ hr {
 	transition: max-height 0.3s ease-out; 
 }
 
+.drawing-gallery {
+	padding: 25px 0px;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: stretch;
+	justify-content: center;
+}
+
+.drawing-box {
+	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 32vw;
+	height: 32vw;
+	margin: 3px;
+	position: relative;
+}
+
+/*.drawing-box:hover {
+	filter: brightness(0.6);
+}*/
+
+.brightness-filter {
+	height: 100%;
+	width: 100%;
+	background-color: #e17d89;
+	opacity: 0;
+}
+
+.drawing-text {
+	padding: 0;
+	margin: auto;
+	text-align: center;
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	color: #ffffff;
+	font-size: 1.4em;
+}
+
+/*.ratio-1-1 {
+	aspect-ratio: 1/1;
+}
+.ratio-16-9 {
+	aspect-ratio: 16/9;
+}
+.ratio-3-4 {
+	aspect-ratio: 3/4;
+}
+.ratio-4-3 {
+	aspect-ratio: 4/3;
+}
+*/
 @media only screen and (max-width: 768px) { /* typical mobile phone break point */
 	.header span {
 		display: none;
@@ -370,5 +427,14 @@ hr {
 	}
 	#welcome-side-box {
 		display: none;
+	}
+
+	.drawing-box {
+		width: 100vw;
+		height: 100vw;
+		margin: 0;
+	}
+	.drawing-gallery {
+		padding: 0;
 	}
 }
