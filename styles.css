@@ -432,7 +432,7 @@ hr {
 	.drawing-box {
 		width: 100vw;
 		height: 100vw;
-		margin: 0;
+		margin: 3px 0;
 	}
 	.drawing-gallery {
 		padding: 0;
