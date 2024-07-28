@@ -351,12 +351,34 @@ hr {
 	transition: max-height 0.3s ease-out; 
 }
 
+.drawing-year {
+	width: 100vw;
+	text-align: center;
+	margin-top: 30px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	filter: grayscale(90%);
+}
+
+.drawing-year:hover {
+	filter: grayscale(0);
+}
+
 .drawing-gallery {
-	padding: 25px 0px;
+	padding: 0;
 	display: flex;
 	flex-flow: row wrap;
 	align-items: stretch;
 	justify-content: center;
+
+	/*	needed as part of animation*/
+	overflow: hidden;
+	/* strangely, the object having padding will cause it to not fully close. */
+	max-height: 0;
+	/* to enable animated collapsible.
+	Ease-out has a slow start and end; its speed curve is like an inverse parabola. */
+	transition: max-height 0.5s ease-out; 
 }
 
 .drawing-box {
@@ -383,9 +405,11 @@ hr {
 
 .drawing-text {
 	padding: 0;
-	margin: auto;
+	margin: 0;
 	text-align: center;
 	display: none;
+	/*still the most reliable method to center an element in a div.
+	requires that the parent has position: relative;*/
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -393,6 +417,43 @@ hr {
 
 	color: #ffffff;
 	font-size: 1.4em;
+}
+
+.drawing-year-text {
+	display: inline-block;
+	font-weight: 350;
+	background-color: #b84a6b;
+	border-radius: 10px;
+}
+
+.drawing-max {
+	margin: 40px 5vw 50px 5vw;
+	text-align: center;
+	overflow: hidden;
+}
+
+.drawing-max img {
+	max-height: 80vh;
+	max-width: 100%;
+}
+
+.drawing-desc {
+	margin: 0 30vw 100px 5vw;
+	background-color: #b84a6b;
+	padding: 30px 30px 120px 30px;
+}
+
+#drawing-year-2024 {
+	background-image: url(images/drawings/compressed/sehr.jpg);
+}
+#drawing-year-2023 {
+	background-image: url(images/drawings/compressed/frozen_memories.jpg);
+}
+#drawing-year-2022 {
+	background-image: url(images/drawings/compressed/dark_impulse.jpg);
+}
+#drawing-year-2021 {
+	background-image: url(images/drawings/compressed/arte.jpg);
 }
 
 /*.ratio-1-1 {

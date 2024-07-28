@@ -40,24 +40,63 @@ menu.addEventListener("click", function() {
 
 // Drawing grid view
 document.addEventListener("DOMContentLoaded", function() {
-    const photoGallery = document.getElementById("drawing-gallery");
-    const photos = Array.from(photoGallery.getElementsByClassName("drawing-box"));
+    const photoGallery2024 = document.getElementById("drawing-gallery-2024");
+    const photos2024 = Array.from(photoGallery2024.getElementsByClassName("drawing-box-2024"));
 
     // Sort photos by date
-    photos.sort((a, b) => {
+    photos2024.sort((a, b) => {
         const dateA = new Date(a.getAttribute("data-date"));
         const dateB = new Date(b.getAttribute("data-date"));
         return dateB - dateA; // Sort from most recent to earliest
     });
 
     // Append sorted photos back to the gallery
-    photos.forEach(photo => photoGallery.appendChild(photo));
+    photos2024.forEach(photo => photoGallery2024.appendChild(photo));
 
 //     new Masonry(photoGallery, {
 //         itemSelector: '.drawing-box',
 //         columnWidth: '.drawing-box',
 //         percentPosition: true
 //     });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const photoGallery2023 = document.getElementById("drawing-gallery-2023");
+    const photos2023 = Array.from(photoGallery2023.getElementsByClassName("drawing-box-2023"));
+
+    photos2023.sort((a, b) => {
+        const dateA = new Date(a.getAttribute("data-date"));
+        const dateB = new Date(b.getAttribute("data-date"));
+        return dateB - dateA;
+    });
+
+    photos2023.forEach(photo => photoGallery2023.appendChild(photo));
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const photoGallery2022 = document.getElementById("drawing-gallery-2022");
+    const photos2022 = Array.from(photoGallery2022.getElementsByClassName("drawing-box-2022"));
+
+    photos2022.sort((a, b) => {
+        const dateA = new Date(a.getAttribute("data-date"));
+        const dateB = new Date(b.getAttribute("data-date"));
+        return dateB - dateA;
+    });
+
+    photos2022.forEach(photo => photoGallery2022.appendChild(photo));
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const photoGallery2021 = document.getElementById("drawing-gallery-2021");
+    const photos2021 = Array.from(photoGallery2021.getElementsByClassName("drawing-box-2021"));
+
+    photos2021.sort((a, b) => {
+        const dateA = new Date(a.getAttribute("data-date"));
+        const dateB = new Date(b.getAttribute("data-date"));
+        return dateB - dateA;
+    });
+
+    photos2021.forEach(photo => photoGallery2021.appendChild(photo));
 });
 
 var squarePic = document.getElementsByClassName("drawing-box")
