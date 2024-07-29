@@ -392,6 +392,10 @@ hr {
 	position: relative;
 }
 
+.drawing-box a {
+	filter: brightness(1.0);
+}
+
 /*.drawing-box:hover {
 	filter: brightness(0.6);
 }*/
@@ -433,14 +437,36 @@ hr {
 }
 
 .drawing-max img {
-	max-height: 80vh;
+	max-height: 90vh;
 	max-width: 100%;
 }
 
 .drawing-desc {
-	margin: 0 30vw 100px 5vw;
+	margin: 0 35vw 100px 5vw;
 	background-color: #b84a6b;
-	padding: 30px 30px 120px 30px;
+	padding: 40px 40px 150px 40px;
+	font-size: 25px;
+}
+
+.drawing-desc span {
+	color: #f0f4fa;
+	font-family: "Dosis";
+	display: block;
+}
+
+.dd-title {
+	margin-bottom: 25px;
+	font-size: 2em;
+	font-weight: 600;
+}
+
+.dd-date {
+	margin-bottom: 20px;
+	font-weight: 300;
+}
+
+.dd-para {
+	font-weight: 350;
 }
 
 #drawing-year-2024 {
@@ -497,5 +523,14 @@ hr {
 	}
 	.drawing-gallery {
 		padding: 0;
+	}
+
+	.drawing-max {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.drawing-desc {
+		margin-left: 40px;
+		margin-right: 40px;
 	}
 }
