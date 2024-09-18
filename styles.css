@@ -231,7 +231,8 @@ hr {
 
 .flex-table-column {
 	display: flex;
-	padding-left: 10vw;
+	padding-left: 5vw;
+	padding-right: 5vw;
 	flex-flow: column-reverse wrap;
 	align-content: flex-start;
 	right: 0;
@@ -243,8 +244,6 @@ hr {
 	flex-flow: row nowrap;
 	text-align: left;
 	align-items: center;
-
-	margin-bottom: 20px;
 }
 
 .see-resume {
@@ -267,6 +266,12 @@ hr {
 .resume-header-top {
 	margin-top: 40px;
 	padding-top: 0px;
+	color: #211c33;
+}
+
+.resume-header-top a:hover {
+	filter: brightness(100%);
+	color: #f0f4fa;
 }
 
 .awards-container {
@@ -279,11 +284,16 @@ hr {
 	font-size: 1.5em;
 	color: #211c33;
 	font-weight: 400;
+	margin-bottom: 10px
 }
 
 .awards-header a:hover {
 	filter: brightness(100%); /* Or it will apply the darkening filter I applied to the a element*/
-	color: #de5a81;
+	color: #f0f4fa;
+}
+
+.awards-year {
+	margin-top: 0;
 }
 
 .experience-header {
